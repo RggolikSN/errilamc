@@ -252,6 +252,7 @@
     cursor: default;
     outline: none;
     margin: 0vh 0vh 1.5vh 0vh;
+    text-align: center;
 }
 
 .buttoncopy{
