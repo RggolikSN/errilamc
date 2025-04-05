@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Flow+Circular&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Tektur:wght@400..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+@keyframes show1 {
+    0%{
+        filter: blur(5px);
+    }
+    50%{
+        filter: blur(0px);
+        .header{
+            opacity: 0%;
+        }
+    }
+    100%{
+        .header{
+            opacity: 100%;
+        }
+    }
+}
+
+@keyframes animend {
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+
+@keyframes animstart {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.textlefth{
+    font-family: tektur;
+    font-size: 3vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 1.5vh;
+    margin: 1vh 0vh 1vh 0vh;
+    position: sticky;
+    left: 87%;
+    padding: 0.75vh 5vh;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh rgb(0, 0, 0), 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
+    transition: cubic-bezier(1,0,0,1) 0.75s;
+    cursor: pointer;
+    backdrop-filter: blur(1vh);
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-sizing: unset;
+    tab-size: 2vh;
+    position: fixed;
+    border-radius: 1.5vh;
+    margin: auto;
+    padding: 0% 0%;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-style: solid;
+    backdrop-filter: blur(10px);
+    box-shadow: 0.15vh 0.15vh 2vh rgba(0, 0, 0, 0.05);
+    left: 0%;
+    top: 2.5%;
+    right: 0%;
+    width: 97.5%;
+    transition: cubic-bezier(.3,.11,.25,.99) 0.5s;
+}
+
+.header:hover{
+    backdrop-filter: blur(15px);
+}
+
+.textlefth:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5vh);
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+.onetexth1{
+    font-family: Anonymous Pro;
+    font-weight: 700;
+    position: inherit;
+    left: 50%;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
+}
+
+.onetexth2{
+    font-family: Wix madefor text;
+    font-weight: 700;
+    position: inherit;
+    left: 50%;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
+}
+
+.bodyall{
+    position: inherit;
+    cursor: default;
+}
+
+.textcenterh{
+    font-family: tektur;
+    font-size: 3vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 1.5vh;
+    padding: 0.75vh 5vh;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
+    transition: cubic-bezier(1,0,0,1) 0.75s;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    width: 75%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.0);
+}
+
+.textcenterh:hover{
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+.body, html{
+    height: 120%;
+}
+
+.ups{
+    margin: 0vh 0vh;
+}
+
+.i1m{
+    padding: 12.5% 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(51c9de1f883159047ae82628dd33fb6a.jpg);
+    background-size: 100%;
+    border-radius: 2.5vh;
+    animation: show1 ease-in-out 1s;
+    box-shadow: 0vh 0vh 1.75vh rgba(0, 0, 0, 0.5);
+}
+
+.textlefth:active{
+    scale: 90%;
+}
+
+.textcenterh:active{
+    font-size: 150%;
+    filter: blur(2.5px);
+    backdrop-filter: blur(5px);
+}
+
+.crossplate{
+    font-family: Anonymous Pro;
+    font-weight: 700;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    font-size: 5vh;
+    color: rgb(40, 40, 40);
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
+    background-color: #cfcfcf;
+    padding: 1.5vh;
+    border-radius: 2vh;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2);
+    animation: 2s cubic-bezier(.3,.11,.25,.99) show1;
+    transition: cubic-bezier(1, 0, 0, 1) 1s;
+    font-size: 300%;
+    width: 85%;
+}
+
+.body, html{
+    background-color: rgb(30, 30, 30);
+}
+
+.upper{
+    font-family: Flow Circular;
+    color: rgb(207, 207, 207);
+    text-align: center;
+    animation: 2.5s cubic-bezier(0.5, 0.2, 0.25, 1) show1;
+    font-size: 150%;
+    text-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 15vh);
+    margin: 2.5vh 0vh;
+}
+
+.crossplate:hover{
+    font-size: 325%;
+}
+
+.ip{
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 1.5vh;
+    padding: 0vh 2.5%;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
+    transition: cubic-bezier(1,0,0,1) 0.75s;
+    transform: translate(-50%, -100%);
+    backdrop-filter: blur(5px);
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.iptxt{
+    font-family: tektur;
+    font-size: 5vh;
+}
+
+.paneltxt{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 1.5vh;
+    backdrop-filter: blur(10px);
+    padding: 0.25vh 1.50vh;
+    cursor: default;
+    outline: none;
+    margin: 0vh 0vh 1.5vh 0vh;
+}
+
+.buttoncopy{
+    transition: cubic-bezier(1,0,0,1) 0.75s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 1.5vh;
+    backdrop-filter: blur(10px);
+    padding: 0.25vh 1.50vh;
+    margin: 0vh 0vh 1.5vh 0vh;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
+}
+
+.buttonexit{
+    transition: cubic-bezier(1,0,0,1) 0.75s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 1.5vh;
+    backdrop-filter: blur(10px);
+    padding: 0.25vh 1.50vh;
+    margin: 1.5vh 0vh 1vh 0vh;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
+}
+
+.buttoncopy:hover{
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+.buttonexit:hover{
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+.buttoncopy:active{
+    font-size: 4.5vh;
+    filter: blur(2.5px);
+    backdrop-filter: blur(5px);
+}
+
+.buttonexit:active{
+    font-size: 4.5vh;
+    filter: blur(2.5px);
+    backdrop-filter: blur(5px);
+}
