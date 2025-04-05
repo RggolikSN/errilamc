@@ -253,6 +253,8 @@
     outline: none;
     margin: 0vh 0vh 1.5vh 0vh;
     text-align: center;
+    transition: cubic-bezier(1,0,0,1) 0.75s;
+    cursor: text;
 }
 
 .buttoncopy{
@@ -284,6 +286,11 @@
 .buttoncopy:hover{
     box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
 }
+
+.paneltxt:hover{
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+}
+
 
 .buttonexit:hover{
     box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
