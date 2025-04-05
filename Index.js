@@ -13,8 +13,8 @@ function HideDiv()
 function CopyIP()
 {
     navigator.clipboard.writeText('Erillamc.online').then(function() {
-        console.log('Текст успешно скопирован в буфер обмена');
+        alert('Текст успешно скопирован в буфер обмена');
     }, function(err) {
-        console.error('Произошла ошибка при копировании текста: ', err);
+        alert('Произошла ошибка при копировании текста: ', err);
     });
 }
