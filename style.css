@@ -239,7 +239,7 @@
 
 .iptxt{
     font-family: tektur;
-    font-size: 5vh;
+    font-size: 185%;
 }
 
 .paneltxt{
@@ -290,13 +290,13 @@
 }
 
 .buttoncopy:active{
-    font-size: 4.5vh;
+    font-size: 205%;
     filter: blur(2.5px);
     backdrop-filter: blur(5px);
 }
 
 .buttonexit:active{
-    font-size: 4.5vh;
+    font-size: 205%;
     filter: blur(2.5px);
     backdrop-filter: blur(5px);
 }
