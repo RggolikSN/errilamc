@@ -18,3 +18,8 @@ function CopyIP()
         alert('Произошла ошибка при копировании текста: ', err);
     });
 }
+
+function Telegram()
+{
+    window.open('http://t.me/EnerillaMC');
+}
