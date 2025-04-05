@@ -254,7 +254,7 @@
     margin: 0vh 0vh 1.5vh 0vh;
     text-align: center;
     transition: cubic-bezier(1,0,0,1) 0.75s;
-    cursor: text;
+    cursor: pointer;
 }
 
 .buttoncopy{
@@ -267,6 +267,7 @@
     backdrop-filter: blur(10px);
     padding: 0.25vh 1.50vh;
     margin: 0vh 0vh 1.5vh 0vh;
+    display: none;
     box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
 }
 
