@@ -50,6 +50,7 @@
     transition: cubic-bezier(1,0,0,1) 0.75s;
     cursor: pointer;
     backdrop-filter: blur(1vh);
+    overflow-x: hidden;
 }
 
 .header{
@@ -132,6 +133,7 @@
     left: 50%;
     transform: translate(-50%, -10%);
     text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.0);
+    overflow-x: hidden;
 }
 
 .textcenterh:hover{
@@ -170,6 +172,107 @@
     backdrop-filter: blur(5px);
 }
 
+.animbtn{
+    font-family: Wix madefor text;
+    font-weight: 700;
+    font-size: 200%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, 175%);
+    color: rgb(40, 40, 40);
+    text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
+    background-color: #cfcfcf;
+    padding: 1.5vh;
+    border-radius: 2vh;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0vh 0vh rgrgb(0, 0, 0)0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+    animation: 3s cubic-bezier(.3,.11,.25,.99) show1;
+    transition: cubic-bezier(.3,.11,.25,.99) 0.5s;
+    border-style: none;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+
+.animbtn:before {
+    transform: translateX(-8.5em) skewX(-45deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 2em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}   
+
+.textcenterh:before {
+    transform: translateX(-8.5em) skewX(-45deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 2em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}   
+
+
+.textcenterh:hover:before {
+    animation: moveLight cubic-bezier(1,0,0,1) 2s;
+}
+
+.textlefth:before {
+    transform: translateX(-8.5em) skewX(-45deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 2em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}   
+
+.buttonexit:before {
+    transform: translateX(-8.5em) skewX(-45deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 2em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}   
+
+.buttonexit:hover:before {
+    animation: moveLight cubic-bezier(1,0,0,1) 2s;
+}
+
+.textlefth:hover:before {
+    animation: moveLight cubic-bezier(1,0,0,1) 2s;
+}
+
+@keyframes moveLight {
+    from {
+        transform: translateX(-8.5em) skewX(-45deg);
+    }
+    to {
+        transform: translateX(100em) skewX(-45deg);
+    }
+}
+
+.animbtn:hover:before {
+    animation: moveLight cubic-bezier(1,0,0,1) 2s;
+}
+
+.animbtn:hover{
+    width: 62.5%;
+    font-size: 205%;
+    box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.5vh 0.5vh rgb(255, 255, 255), 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.2);
+}
+
 .crossplate{
     font-family: Anonymous Pro;
     font-weight: 700;
@@ -197,22 +300,6 @@
     background-color: rgb(30, 30, 30);
 }
 
-.upper{
-    font-family: Flow Circular;
-    color: rgb(207, 207, 207);
-    text-align: center;
-    animation: 2.5s cubic-bezier(0.5, 0.2, 0.25, 1) show1;
-    font-size: 150%;
-    text-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.2);
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    transform: translate(-50%, 400%);
-    margin: auto 0vh;
-}
-
 .crossplate:hover{
     font-size: 255%;
 }
@@ -231,7 +318,7 @@
     padding: 0vh 2.5%;
     box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
     transition: cubic-bezier(1,0,0,1) 0.75s;
-    transform: translate(-50%, -165%);
+    transform: translate(-50%, -185%);
     backdrop-filter: blur(5px);
     text-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.5);
     display: none;
@@ -255,6 +342,7 @@
     text-align: center;
     transition: cubic-bezier(1,0,0,1) 0.75s;
     cursor: pointer;
+    overflow-x: hidden;
 }
 
 .buttoncopy{
@@ -268,6 +356,7 @@
     padding: 0.25vh 1.50vh;
     margin: 0vh 0vh 1.5vh 0vh;
     display: none;
+    overflow-x: hidden;
     box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
 }
 
@@ -281,6 +370,7 @@
     backdrop-filter: blur(10px);
     padding: 0.25vh 1.50vh;
     margin: 1.5vh 0vh 1vh 0vh;
+    overflow-x: hidden;
     box-shadow: 0.25vh 0.25vh 2vh rgba(0, 0, 0, 0.2), 0.0vh 0.0vh black, 0.0vh 0.0vh 2vh rgba(0, 0, 0, 0.0);
 }
 
