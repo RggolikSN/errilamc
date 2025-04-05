@@ -19,6 +19,16 @@ function CopyIP()
     });
 }
 
+function CopyEmail()
+{
+    navigator.clipboard.writeText('ErillaMC@yandex.ru').then(function() {
+        alert('Текст успешно скопирован в буфер обмена');
+    }, function(err) {
+        alert('Произошла ошибка при копировании текста: ', err);
+    });
+}
+
+
 function Telegram()
 {
     window.open('http://t.me/EnerillaMC');
